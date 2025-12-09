@@ -1,0 +1,10 @@
+use world;
+select database();
+show tables;
+
+describe city; -- to see the structure 
+-- to print data of a table 
+select * from city;
+
+-- to access column
+select name , population from city;
