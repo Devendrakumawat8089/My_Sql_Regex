@@ -31,8 +31,9 @@ create table Student(sid int , name char(10)); show tables;
 show tables; 
 -- explain the table structure by usign (desc / describe) 
 describe actor;
+-- Explain the Table Structure.
 -- select column_name from table_name 
-select * from actor ; 
+select * from actor; 
 -- access all colums select First_name from actor ; 
 -- access only first colums 
 select first_name , actor_id , actor_id * 10 from actor; 
@@ -100,7 +101,7 @@ select *  from actor where concat(first_name , last_name) LIKE '%A';
 select *  from actor where concat(first_name , last_name) LIKE '%A%A%';
 
 -- concat_ws()
-select *  , concat_ws('_' ,'MR', first_name , last_name) from actor;
+select *  , concat_ws('_' ,'Mr', first_name , last_name) from actor;
 
 -- substr() --> kuch part access krna --> like python slicing
 -- substr --> extract kuch position ko (extract data basis of position) 
